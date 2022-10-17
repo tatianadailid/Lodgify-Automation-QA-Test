@@ -6,6 +6,7 @@
     "phoneNumber": "296111111",
     "phoneCountry": "Belarus",
     "numberOfGuests": "1",
+    "numberOfRentals": "50",
     "successMessage": "Your request has been sent successfully."
   }
   
