@@ -8,11 +8,15 @@ export class PricingPage {
     this.numberOfRentalsBox().clear().type(number);
   };
 
-  getStarterRentals = () => {
+  getStarterRentals = (rentals) => {
     this.starterRentals().each((listItem,index) => {
         const itemText = listItem.text().trim();
-        expect(itemText).to.include(rentals.Yearly[50].USD[index]);
+        expect(itemText).to.include(rentals[index]);
     });
+  };
+
+  selectCurrency = (currency) => {
+    cy.get("select").select(currency);
   };
 
   
